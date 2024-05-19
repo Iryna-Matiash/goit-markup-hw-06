@@ -424,7 +424,10 @@ HERO
 /* ========================================================================================================================================================
 BENEFITS STYLES
 ======================================================================================================================================================== */
-
+.benefits-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .benefit-icon {
     display: none;
 }
@@ -463,10 +466,7 @@ BENEFITS STYLES
 }
 
 @media screen and (min-width: 768px) {
-    .benefits-section {
-        padding-top: 120px;
-            padding-bottom: 120px;
-    }
+    
     .benefit-icon {
             align-items: center;
             justify-content: center;
@@ -482,12 +482,20 @@ BENEFITS STYLES
                 gap: 72px 24px;
                
         }
+                .benefits-item {
+                    display: flex;
+                        justify-content: left;
+                }
         .list-item {
-                flex-basis: calc((100% - 24px) / 2);
+                width: calc((100% - 24px) / 2);
         }
                 
 }
 @media screen and (min-width: 1158px) {
+    .benefits-section {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
     .list-benefits {
         flex-wrap: nowrap;
         gap: 24px;
@@ -762,7 +770,7 @@ FOOTER
 
 .page-footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    padding: 96px 0;
 }
 .footer-container {
     display: flex;
