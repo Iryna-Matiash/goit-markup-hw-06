@@ -336,8 +336,6 @@ MOB MENU
     fill: #f4f4fd;
 }
 
-.mob-address {}
-
 .mob-addres-list-link {
     display: flex;
     flex-direction: column;
