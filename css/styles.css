@@ -1,6 +1,15 @@
 .hidden {
     display: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 
 ul,
 ol {
@@ -124,7 +133,6 @@ HEADER
     }
 
     .logo {
-        padding: 24px 0;
         margin-right: 120px;
     }
 
@@ -363,7 +371,7 @@ HERO
     background: #2e2f42;
     max-width: 320px;
     margin: 0 auto;
-    padding: 188px 0;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero_people/people_mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -379,7 +387,9 @@ HERO
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-    margin: 48px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 .button-hero {
     display: block;
@@ -405,6 +415,7 @@ HERO
 
 @media screen and (min-width: 768px) {
     .page-hero {
+        padding: 112px 0;
         max-width: 768px;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero_people/people_tabl.jpg);
     }
@@ -416,6 +427,7 @@ HERO
 
 @media screen and (min-width: 1158px) {
 .page-hero {
+    padding: 188px 0;
     max-width: 1440px;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero_people/people_desk.jpg);
 }
@@ -559,8 +571,9 @@ OUR TEAM
 }
 .our-team-container {
     display: flex;
-    gap: 24px;
+    gap: 72px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .list-name {
     background-color: #FFFFFF;
@@ -773,17 +786,16 @@ FOOTER
     padding: 96px 0;
 }
 .footer-container {
-    display: flex;
     flex-direction: column;
-        gap: 72px;
         margin: 0;
+        align-items: baseline;
 }
 .logo-paragraf {
     display: flex;
         flex-direction: column;
         align-items: center;
 }
-.logo {
+.footer-logo {
     display: inline-block;
         font-family: "Raleway", sans-serif;
         font-weight: 700;
@@ -792,7 +804,6 @@ FOOTER
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        margin-left: auto;
 }
 .color-logofoter {
     color: #f4f4fd;
@@ -802,7 +813,7 @@ FOOTER
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: #f4f4fd;
-            min-width: 288px;
+            max-width: 264px;
 }
 .footer-social {
     display: flex;
@@ -845,13 +856,7 @@ FOOTER
         .social-list-icon {
             fill: #f4f4fd;
         }
- .subscribe-footer {
-    width: 288px;
-        height: 136px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
- }
+
 
  .footer-form-title {
      font-weight: 500;
@@ -863,9 +868,11 @@ FOOTER
  }
 
  .footer-subscribe-form {
-    display: block;
-        margin-top: 0em;
+    display: flex;
         unicode-bidi: isolate;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
  }
 
  .footer-form-label {
@@ -927,28 +934,23 @@ FOOTER
  @media screen and (min-width: 768px) {
     .footer-container {
         display: flex;
-         max-width: 584px;
          flex-direction: row;
          flex-wrap: wrap;
-         column-gap: 24px;
-         margin-left: 108px;
+        padding-left: 108px;
+         gap: 72px 24px;
      }
      
      .social-text {
                 align-self: flex-start;
      }
-         .subscribe-footer {
-            width: 453px;
-                height: 80px;
-                display: flex;
-                margin-bottom: 72px;
-         }
+        
          .footer-form-title {
             align-self: flex-start;
          }
                  .footer-subscribe-form {
                     display: flex;
                         gap: 24px;
+                        flex-direction: row;
                  }
                 }
                             
@@ -962,16 +964,18 @@ FOOTER
                         align-items: baseline;
                         flex-wrap: nowrap;
                         column-gap: 0;
+                        padding-left: 15px;
          }
                  .logo-paragraf {
                     margin-right: 120px;
                         margin-left: 0;
                  }
-                 .logo {
+                 .footer-logo {
                     margin-left: 0;
                  }
                  .text-footer {
                     max-width: 264px;
+                    
                  }
                  .social-text {
                     align-self: flex-start;
