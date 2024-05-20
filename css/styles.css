@@ -786,14 +786,14 @@ FOOTER
     padding: 96px 0;
 }
 .footer-container {
+    display: flex;
     flex-direction: column;
-        margin: 0;
-        align-items: baseline;
+        align-items: center;
+        gap: 72px;
 }
 .logo-paragraf {
     display: flex;
         flex-direction: column;
-        align-items: center;
 }
 .footer-logo {
     display: inline-block;
@@ -804,6 +804,7 @@ FOOTER
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin-bottom: 16px;
 }
 .color-logofoter {
     color: #f4f4fd;
@@ -865,6 +866,7 @@ FOOTER
      letter-spacing: 0.02em;
      color: #ffffff;
      margin-bottom: 16px;
+     text-align: center;
  }
 
  .footer-subscribe-form {
@@ -887,7 +889,7 @@ FOOTER
     background-color: transparent;
         border: 1px solid #fff;
         border-radius: 4px;
-        width: 264px;
+        width: 288px;
         height: 40px;
         padding-left: 16px;
         padding-right: 16px;
@@ -938,7 +940,11 @@ FOOTER
          flex-wrap: wrap;
         padding-left: 108px;
          gap: 72px 24px;
+         align-items: baseline;
      }
+         .footer-input {
+            width: 264px;
+         }
      
      .social-text {
                 align-self: flex-start;
@@ -946,6 +952,7 @@ FOOTER
         
          .footer-form-title {
             align-self: flex-start;
+            text-align: left;
          }
                  .footer-subscribe-form {
                     display: flex;
@@ -963,12 +970,13 @@ FOOTER
                     display: flex;
                         align-items: baseline;
                         flex-wrap: nowrap;
-                        column-gap: 0;
+                        gap: 0;
                         padding-left: 15px;
          }
                  .logo-paragraf {
                     margin-right: 120px;
                         margin-left: 0;
+                        align-items: flex-start;
                  }
                  .footer-logo {
                     margin-left: 0;
